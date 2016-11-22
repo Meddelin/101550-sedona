@@ -1,7 +1,7 @@
 # Личный проект «Седона» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Станислав Медведев](https://up.htmlacademy.ru/adaptive/9/user/101550).
-* Наставник: `Неизвестно`.
+* Наставник: [Анастасия Мусаэльян](https://htmlacademy.ru/profile/id124940).
 
 ---
 
