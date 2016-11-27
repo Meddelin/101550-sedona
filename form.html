@@ -28,43 +28,42 @@
         <img src="#" alt="Добро пожаловать в Седону" width="320" height="390">
       </div>
 
-      <div class="call">
-        <h1 class="call__title">Оставьте свой отзыв</h1>
-        <p class="call__text">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
-      </div>
-
-      <form class="main-form" action="#" method="post">
-        <div class="main-form__block">
-          <div class="main-form__title">Представьтесь:</div>
-          <label for="name">Имя*:<input type="text" class="main-form__label" id="name" name="name"></label>
-          <label for="surname">Фамилия*:<input type="text" class="main-form__label" id="surname" name="surname"></label>
-          <label for="patronymic">Отчество:<input type="text" class="main-form__label" id="patronymic" name="patronymic"></label>
+      <section class="review">
+        <h1 class="review__title">Оставьте свой отзыв</h1>
+        <p class="review__description">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+      <form class="review__form" action="#" method="post">
+        <div class="review__block">
+          <div class="review__title">Представьтесь:</div>
+          <label for="name">Имя*:<input type="text" class="review__label" id="name" name="name"></label>
+          <label for="surname">Фамилия*:<input type="text" class="review__label" id="surname" name="surname"></label>
+          <label for="patronymic">Отчество:<input type="text" class="review__label" id="patronymic" name="patronymic"></label>
         </div>
-        <div class="main-form__block">
-          <div class="main-form__title">Контактная информация:</div>
-          <label for="phone">Введите телефон*:<input type="tel" class="main-form__label main-form__phone" id="phone" name="phone"></label>
-          <div class="main-form__error from-block__error--hidden">Ошибка, перепроверьте номер</div>
-          <label for="mail">Электронная почта*:<input type="email" class="main-form__label main-form__enail" id="mail" name="mail"></label>
+        <div class="review__block">
+          <div class="review__title">Контактная информация:</div>
+          <label for="phone">Введите телефон*:<input type="tel" class="review__label review__phone" id="phone" name="phone"></label>
+          <div class="review__error review__error--hidden">Ошибка, перепроверьте номер</div>
+          <label for="mail">Электронная почта*:<input type="email" class="review__label review__enail" id="mail" name="mail"></label>
         </div>
-        <div class="main-form__block">
-          <div class="main-form__title">Ваше общее впечатление:</div>
-          <label for="main-form__radio-1"><input type="radio" class="main-form__radio" id="main-form__radio-1" name="main-form__radio" value="+">Скорее положительное</label>
-          <label for="main-form__radio-2"><input type="radio" class="main-form__radio" id="main-form__radio-2" name="main-form__radio" value="-">Скорее отрицательное</label>
-          <label for="main-form__radio-3"><input type="radio" class="main-form__radio" id="main-form__radio-3" name="main-form__radio" value="+/-">Затрудняюсь ответить</label>
+        <div class="review__block">
+          <div class="review__title">Ваше общее впечатление:</div>
+          <label for="review__radio-1"><input type="radio" class="review__radio" id="review__radio-1" name="review__radio" value="+">Скорее положительное</label>
+          <label for="review__radio-2"><input type="radio" class="review__radio" id="review__radio-2" name="review__radio" value="-">Скорее отрицательное</label>
+          <label for="review__radio-3"><input type="radio" class="review__radio" id="review__radio-3" name="review__radio" value="+/-">Затрудняюсь ответить</label>
         </div>
-        <div class="main-form__block">
-          <div class="main-form__title">Посещенные достопримечательности:</div>
-          <label for="main-form__checkbox-1"><input type="checkbox" class="main-form__checkbox" id="main-form__checkbox-1" name="devils-bridge" value="devils-bridge">Мост Дьявола</label>
-          <label for="main-form__checkbox-2"><input type="checkbox" class="main-form__checkbox" id="main-form__checkbox-2" name="slide-park" value="slide-park">Слайд-парк</label>
-          <label for="main-form__checkbox-3"><input type="checkbox" class="main-form__checkbox" id="main-form__checkbox-3" name="mount-bell" value="mount-bell">Гора-Колокол</label>
-          <label for="main-form__checkbox-4"><input type="checkbox" class="main-form__checkbox" id="main-form__checkbox-4" name="red-rocks" value="red-rocks">Красные Скалы</label>
+        <div class="review__block">
+          <div class="review__title">Посещенные достопримечательности:</div>
+          <label for="review__checkbox-1"><input type="checkbox" class="review__checkbox" id="review__checkbox-1" name="devils-bridge" value="devils-bridge">Мост Дьявола</label>
+          <label for="review__checkbox-2"><input type="checkbox" class="review__checkbox" id="review__checkbox-2" name="slide-park" value="slide-park">Слайд-парк</label>
+          <label for="review__checkbox-3"><input type="checkbox" class="review__checkbox" id="review__checkbox-3" name="mount-bell" value="mount-bell">Гора-Колокол</label>
+          <label for="review__checkbox-4"><input type="checkbox" class="review__checkbox" id="review__checkbox-4" name="red-rocks" value="red-rocks">Красные Скалы</label>
         </div>
-        <div class="main-form__block">
-          <div class="main-form__title">Опишите свои эмоции</div>
-          <textarea name="main-form__text" class="main-form__text"  rows="8" cols="80">Опишите подробно все свои восторги</textarea>
+        <div class="review__block">
+          <div class="review__title">Опишите свои эмоции</div>
+          <textarea name="review__text" class="review__text"  rows="8" cols="80">Опишите подробно все свои восторги</textarea>
         </div>
-        <button type="submit" name="main-from__submit" class="main-from__submit">Отправить отзыв</button>
+        <button type="submit" name="review__submit" class="review__submit">Отправить отзыв</button>
       </form>
+    </section>
 
       <footer class="page-footer">
         <a class="page-footer__hashtag"  href="#">#visitsedona</a>
@@ -75,6 +74,18 @@
         </div>
         <a href="#" class="copyright">Разработано</a>
       </footer>
+
+      <div class="popup popup--failed">
+        <h2 class="popup__title">Что-то пошло не так!</h2>
+        <p class="popup__description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+        <button class="popup__btn" type ="button">OK</button>
+      </div>
+
+      <div class="popup popup--success">
+        <h2 class="popup__title">Ваш отзыв отправлен!</h2>
+        <p class="popup__description">Спасибо за ваше участие, ваш отзыв уже поступил к нам. в ближайшее время мы опубликуем его на сайте.</p>
+        <button class="popup__btn" type ="button">Закрыть окно</button>
+      </div>
     </div>
   </body>
 </html>
