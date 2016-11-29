@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Седона</title>
+  </head>
+  <body>
+    <div class="wrapper">
+
+      <header class="page-header">
+        <button class="page-header__toggle" type="button">Гамбургер</button>
+        <nav class="menu">
+          <ul class="menu__list">
+            <li class="menu__item"><a href="#" class="menu__link">Главная</a></li>
+            <li class="menu__item"><a href="#" class="menu__link">Фото и видео</a></li>
+            <li class="menu__item"><a class="menu__link menu__link--active">Форма отзыва</a></li>
+            <li class="menu__item"><a href="#" class="menu__link">HTML Academy</a></li>
+          </ul>
+        </nav>
+        <div class="page-header__logo">
+          <a href="#" class="page-header__logo-link">
+            <img src="#" alt="Седона логотип" width="105" height="85">
+          </a>
+        </div>
+      </header>
+
+      <div class="promo">
+        <img src="#" alt="Добро пожаловать в Седону" width="320" height="390">
+      </div>
+
+      <section class="review">
+        <h1 class="review__title">Оставьте свой отзыв</h1>
+        <p class="review__description">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+        <form class="review__form" action="#" method="post">
+          <div class="review__block">
+            <div class="review__title">Представьтесь:</div>
+            <label for="name">Имя*:<input type="text" class="review__label" id="name" name="name"></label>
+            <label for="surname">Фамилия*:<input type="text" class="review__label" id="surname" name="surname"></label>
+            <label for="patronymic">Отчество:<input type="text" class="review__label" id="patronymic" name="patronymic"></label>
+          </div>
+          <div class="review__block">
+            <div class="review__title">Контактная информация:</div>
+            <label for="phone">Введите телефон*:<input type="tel" class="review__label review__phone" id="phone" name="phone"></label>
+            <div class="review__error review__error--hidden">Ошибка, перепроверьте номер</div>
+            <label for="mail">Электронная почта*:<input type="email" class="review__label review__enail" id="mail" name="mail"></label>
+          </div>
+          <div class="review__block">
+            <div class="review__title">Ваше общее впечатление:</div>
+            <label for="review__radio-1"><input type="radio" class="review__radio" id="review__radio-1" name="review__radio" value="+">Скорее положительное</label>
+            <label for="review__radio-2"><input type="radio" class="review__radio" id="review__radio-2" name="review__radio" value="-">Скорее отрицательное</label>
+            <label for="review__radio-3"><input type="radio" class="review__radio" id="review__radio-3" name="review__radio" value="+/-">Затрудняюсь ответить</label>
+          </div>
+          <div class="review__block">
+            <div class="review__title">Посещенные достопримечательности:</div>
+            <label for="review__checkbox-1"><input type="checkbox" class="review__checkbox" id="review__checkbox-1" name="devils-bridge" value="devils-bridge">Мост Дьявола</label>
+            <label for="review__checkbox-2"><input type="checkbox" class="review__checkbox" id="review__checkbox-2" name="slide-park" value="slide-park">Слайд-парк</label>
+            <label for="review__checkbox-3"><input type="checkbox" class="review__checkbox" id="review__checkbox-3" name="mount-bell" value="mount-bell">Гора-Колокол</label>
+            <label for="review__checkbox-4"><input type="checkbox" class="review__checkbox" id="review__checkbox-4" name="red-rocks" value="red-rocks">Красные Скалы</label>
+          </div>
+          <div class="review__block">
+            <div class="review__title">Опишите свои эмоции</div>
+            <textarea name="review__text" class="review__text"  rows="8" cols="80">Опишите подробно все свои восторги</textarea>
+          </div>
+          <button type="submit" name="review__submit" class="review__submit">Отправить отзыв</button>
+        </form>
+      </section>
+
+      <footer class="page-footer">
+        <a class="page-footer__hashtag"  href="#">#visitsedona</a>
+        <div class="social">
+          <a href="#" class="social__btn social__btn--twitter btn">Twitter</a>
+          <a href="#" class="social__btn social__btn--instagram btn">Instagram</a>
+          <a href="#" class="social__btn social__btn--youtube btn">Youtube</a>
+        </div>
+        <a href="#" class="copyright">Разработано</a>
+      </footer>
+
+      <div class="popup popup--failed">
+        <div class="popup__title">Что-то пошло не так!</div>
+        <p class="popup__description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+        <button class="btn popup__button" type ="button">OK</button>
+      </div>
+
+      <div class="popup popup--success">
+        <div class="popup__title">Ваш отзыв отправлен!</div>
+        <p class="popup__description">Спасибо за ваше участие, ваш отзыв уже поступил к нам. в ближайшее время мы опубликуем его на сайте.</p>
+        <button class="btn popup__button" type ="button">Закрыть окно</button>
+      </div>
+    </div>
+  </body>
+</html>
