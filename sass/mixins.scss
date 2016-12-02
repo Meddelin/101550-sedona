@@ -1,0 +1,11 @@
+@mixin site__title() {
+  font-family: "PT Sans Bold", sans-serif;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+@mixin site__menu() {
+  @include site__title;
+  line-height: 40px;
+}

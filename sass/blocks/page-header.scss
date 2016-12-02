@@ -1,19 +1,14 @@
-.menu__list {
-  padding: 0;
-  margin: 0;
+.page-header__logo {
+  position: relative;
+  min-height: 55px;
+  background: #ffffff;
 }
 
-.menu__item {
-  list-style: none;
-}
-
-.menu__link {
+.page-header__logo-link {
+  position: absolute;
   display: block;
-  padding: 10px 0;
-  text-decoration: none;
-  color: #ffffff;
-  font-size: 18px;
-  line-height: 40px;
-  text-align: center;
-  background: rgb(129, 179, 210);
+  left: 50%;
+  width: 105px;
+  margin-left: -52.5px;
+  z-index: 1;
 }
