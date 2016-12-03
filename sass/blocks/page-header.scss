@@ -1,0 +1,14 @@
+.page-header__logo {
+  position: relative;
+  min-height: 55px;
+  background: #ffffff;
+}
+
+.page-header__logo-link {
+  position: absolute;
+  display: block;
+  left: 50%;
+  width: 105px;
+  margin-left: -52.5px;
+  z-index: 1;
+}
