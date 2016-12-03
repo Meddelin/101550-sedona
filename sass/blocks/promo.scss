@@ -1,15 +1,16 @@
 .promo {
   background: url("../img/bg-back-mobile@1x.jpg") no-repeat;
   height: 180px;
-  width: 320px;
-}
+  width: 100%;
+  }
 
 .promo--big {
-  height: auto;
+  height: 390px;
 }
-
 
 .promo__text {
   display: block;
+  width: 280px;
   margin: 0 auto;
+  padding-top: 90px;
 }

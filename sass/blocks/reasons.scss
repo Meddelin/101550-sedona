@@ -1,0 +1,17 @@
+.reasons {
+  width: 100%;
+}
+
+.reasons__title {
+  @include site__title;
+  text-align: center;
+  padding: 0 30px;
+  margin-top: 40px;
+}
+
+.reasons__text {
+  @include site__text;
+  text-align: center;
+  margin-top: 30px;
+  padding: 0 30px;
+}
