@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
@@ -23,7 +24,6 @@
             <img src="img/logo-sedona-mobile.svg" alt="Седона логотип">
           </a>
         </div>
-
       </header>
 
       <div class="promo promo--big">
@@ -34,66 +34,76 @@
         <h1 class="reasons__title"> Седона - небольшой городок в Аризоне, заслуживающий большего!</h1>
         <p class="reasons__text">Рассмотрим 5 причин, по которым Седона круче чем Гранд Каньон!</p>
 
-        <div class="reason">
-          <div class="reason__description reason__description--blue">
-            <h2 class="reason__title">Настоящий городок</h2>
-            <div class="reason__number">№1</div>
-            <p class="reason__text">Седона не аттракцион для туристов, там течет своя жизнь</p>
+        <div class="reason-row">
+          <div class="reason">
+            <div class="reason__description reason__description--blue">
+              <h2 class="reason__title">Настоящий городок</h2>
+              <div class="reason__number">№1</div>
+              <p class="reason__text">Седона не аттракцион для туристов, там течет своя жизнь</p>
+            </div>
+            <div class="reason__picture">
+              <img src="img/photo-city@1x.jpg" alt="Настоящий городок" width="320" height="260">
+            </div>
           </div>
-          <div class="reason__picture">
-            <img src="img/photo-city@1x.jpg" alt="Настоящий городок" width="320" height="260">
+      </div>
+
+        <div class="reason-row">
+          <div class="reason reason--home">
+            <div class="reason__description reason__description--icon">
+              <h2 class="reason__title">Жилье</h2>
+              <p class="reason__text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+            </div>
+          </div>
+          <div class="reason reason--gift">
+            <div class="reason__description reason__description--icon">
+              <h2 class="reason__title">Сувениры</h2>
+              <p class="reason__text">Не только китайского, но и местного производства!</p>
+            </div>
+          </div>
+          <div class="reason reason--food">
+            <div class="reason__description reason__description--icon">
+              <h2 class="reason__title">Еда</h2>
+              <p class="reason__text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+            </div>
           </div>
         </div>
 
-        <div class="features-row">
-          <div class="feature">
-            <h2 class="feature__title">Жилье</h2>
-            <p class="feature__text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
-          </div>
-
-          <div class="feature">
-            <h2 class="feature__title">Сувениры</h2>
-            <p class="feature__text">Не только китайского, но и местного производства!</p>
-          </div>
-
-          <div class="feature">
-            <h2 class="feature__title">Еда</h2>
-            <p class="feature__text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
-          </div>
+        <div class="reason-row reason-row--inverted">
+          <div class="reason">
+            <div class="reason__description reason__description--blue">
+              <h2 class="reason__title">Там есть мост дьявола</h2>
+              <div class="reason__number">№2</div>
+              <p class="reason__text">Да, по нему можно пройти! Если осмелитесь, конечно</p>
+            </div>
+            <div class="reason__picture">
+              <img src="img/photo-4-mobile@1x.jpg" alt="Там есть мост дьявола" width="320" height="260">
+            </div>
         </div>
+      </div>
 
-        <div class="reason">
-          <div class="reason__description reason__description--blue">
-            <h2 class="reason__title">Там есть мост дьявола</h2>
-            <div class="reason__number">№2</div>
-            <p class="reason__text">Да, по нему можно пройти! Если осмелитесь, конечно</p>
+        <div class="reason-row">
+          <div class="reason">
+            <div class="reason__description reason__description--grey whynot">
+              <h2 class="reason__title">Небольшая площадь</h2>
+              <div class="reason__number">№3</div>
+              <p class="reason__text">Все достопримечательности находятся очень близко</p>
+            </div>
           </div>
-          <div class="reason__picture">
-            <img src="img/photo-4-mobile@1x.jpg" alt="Там есть мост дьявола" width="320" height="260">
-          </div>
-        </div>
 
-        <div class="reason">
-          <div class="reason__description reason_description--grey">
-            <h2 class="reason__title">Небольшая площадь</h2>
-            <div class="reason__number">№3</div>
-            <p class="reason__text">Все достопримечательности находятся очень близко</p>
+          <div class="reason">
+            <div class="reason__description reason__description--grey">
+              <h2 class="reason__title">Красивая дорога</h2>
+              <div class="reason__number">№4</div>
+              <p class="reason__text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+            </div>
           </div>
-        </div>
 
-        <div class="reason">
-          <div class="reason__description reason_description--grey">
-            <h2 class="reason__title">Красивая дорога</h2>
-            <div class="reason__number">№4</div>
-            <p class="reason__text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-          </div>
-        </div>
-
-        <div class="reason">
-          <div class="reason__description reason_description--grey">
-            <h2 class="reason__title">Мало туристов</h2>
-            <div class="reason__number">№5</div>
-            <p class="reason__text">Большинство едет в Гранд Каньон и толпится там</p>
+          <div class="reason">
+            <div class="reason__description reason__description--grey">
+              <h2 class="reason__title">Мало туристов</h2>
+              <div class="reason__number">№5</div>
+              <p class="reason__text">Большинство едет в Гранд Каньон и толпится там</p>
+            </div>
           </div>
         </div>
       </article>

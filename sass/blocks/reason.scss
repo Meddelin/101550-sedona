@@ -1,35 +1,94 @@
-.reason {
-  width: 100%;
-}
 
 .reason__description--blue {
  background: rgb(129, 179, 210);
+ color: #ffffff;
+ text-align: center;
+}
+
+.reason-row {
+  width: 100%
 }
 
 .reason__title {
-  padding: 0;
-  margin: 0;
-  padding-top: 40px;
   @include site__title;
-  text-align: center;
-  color: #ffffff;
+  margin: 0;
+  padding: 0;
 }
 
+.reason__text,
 .reason__number {
-  padding: 0;
+  @include site__text;
   margin: 0;
+  padding: 0;
+}
+
+.reason__description--icon {
+  padding-left: 70px;
+  padding-right: 40px;
+}
+.reason__description .reason__title {
+  padding-top: 40px;
+}
+
+.reason__description .reason__number {
   padding-top: 15px;
   padding-bottom: 15px;
-  @include site__text;
-  text-align: center;
-  color: #ffffff;
 }
 
-.reason__text {
-  padding: 0;
-  margin: 0;
-  @include site__text;
-  text-align: center;
+.reason__description .reason__text {
   padding-bottom: 40px;
-  color: #ffffff;
 }
+
+.reason__description--icon .reason__text {
+  padding: 0;
+}
+
+.reason__description--icon .reason__title {
+  padding: 0;
+  padding-top: 35px;
+  padding-bottom: 15px;
+}
+
+.reason__description--food .reason__text {
+  padding-bottom: 35px;
+}
+
+.reason {
+  position: relative;
+}
+
+.reason__description--icon:before {
+  content:"";
+  background-size: contain;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  left: 20px;
+  top: 25px;
+}
+
+.reason--home .reason__description--icon:before {
+  background: url("../img/icon-house.svg") center top no-repeat;
+  background-size: contain;
+}
+
+.reason--gift .reason__description--icon:before {
+  background: url("../img/icon-gift.svg") center top no-repeat;
+  background-size: contain;
+}
+
+.reason--food .reason__description--icon:before {
+  background: url("../img/icon-burger.svg") center top no-repeat;
+  background-size: contain;
+  top: 26px;
+}
+
+.reason--food .reason__text {
+  padding-bottom: 35px;
+}
+
+.reason__description--grey {
+ background: rgb(238, 238, 238);
+ text-align: center;
+}
+//ИСПРАВИТЬ ОТСУПЫ У ГРЕЙ, ХЕХЕХЕХЕ
