@@ -1,7 +1,9 @@
 .promo {
   background: url("../img/bg-back-mobile@1x.jpg") no-repeat;
   height: 180px;
-  width: 100%;
+  position: relative;
+  padding: 0;
+  margin: 0;
   }
 
 .promo--big {
@@ -13,4 +15,14 @@
   width: 280px;
   margin: 0 auto;
   padding-top: 90px;
+}
+
+.promo--big:after {
+  position: absolute;
+  content: "";
+  display: block;
+  background: url("../img/bg-intro-triangle-mobile.svg") no-repeat;
+  width: 320px;
+  height: 25px;
+  bottom: 0;
 }

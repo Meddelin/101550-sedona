@@ -11,6 +11,7 @@
 
 .reason__title {
   @include site__title;
+  font-size: 18px;
   margin: 0;
   padding: 0;
 }
@@ -90,5 +91,30 @@
 .reason__description--grey {
  background: rgb(238, 238, 238);
  text-align: center;
+ padding-left: 20px;
+ padding-right: 20px;
 }
-//ИСПРАВИТЬ ОТСУПЫ У ГРЕЙ, ХЕХЕХЕХЕ
+
+.reason__description--grey .reason__title {
+  padding-top: 30px;
+}
+
+.reason__description--grey .reason__number {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.reason__description--grey .reason__text {
+  padding-bottom: 30px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-bottom: 1px solid rgb(214,214,214);
+}
+
+.reason__description--grey .reason__text--no-border {
+   border: none;
+ }
+
+.reason__picture img {
+  display: block;
+}
