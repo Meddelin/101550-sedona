@@ -6,7 +6,11 @@
 }
 
 .reason-row {
-  width: 100%
+  width: 100%;
+  @media ($tablet-width) {
+    display: flex;
+    flex-direction: row;
+  }
 }
 
 .reason__title {
@@ -14,11 +18,17 @@
   font-size: 18px;
   margin: 0;
   padding: 0;
+
+  @media ($tablet-width) {
+    font-size: 21px;
+  }
 }
 
 .reason__text,
 .reason__number {
   @include site__text;
+  font-size: 14px;
+  line-height: 21px;
   margin: 0;
   padding: 0;
 }
@@ -26,28 +36,57 @@
 .reason__description--icon {
   padding-left: 70px;
   padding-right: 40px;
+
+  @media ($tablet-width) {
+    padding: 0;
+    text-align: center;
+  }
 }
 .reason__description .reason__title {
   padding-top: 40px;
+
+  @media ($tablet-width) {
+    padding: 0px 50px;
+    padding-top: 47px;
+  }
 }
 
 .reason__description .reason__number {
   padding-top: 15px;
   padding-bottom: 15px;
+
+  @media ($tablet-width) {
+    padding-bottom: 23px;
+  }
 }
 
 .reason__description .reason__text {
   padding-bottom: 40px;
+
+  @media ($tablet-width) {
+    padding-left: 45px;
+    padding-right: 45px;
+  }
 }
 
 .reason__description--icon .reason__text {
   padding: 0;
+  @media ($tablet-width) {
+    padding-left: 45px;
+    padding-right: 45px;
+    padding-bottom: 60px;
+  }
 }
 
 .reason__description--icon .reason__title {
   padding: 0;
   padding-top: 35px;
   padding-bottom: 15px;
+
+  @media ($tablet-width) {
+    padding-top: 160px;
+    padding-bottom: 25px;
+  }
 }
 
 .reason__description--food .reason__text {
@@ -56,6 +95,10 @@
 
 .reason {
   position: relative;
+  @media ($tablet-width) {
+    display: flex;
+    flex-direction: row;
+  }
 }
 
 .reason__description--icon:before {
@@ -66,6 +109,13 @@
   position: absolute;
   left: 20px;
   top: 25px;
+
+  @media ($tablet-width) {
+    width: 80px;
+    height: 80px;
+    top: 60px;
+    left: 90px;
+  }
 }
 
 .reason--home .reason__description--icon:before {
@@ -82,10 +132,18 @@
   background: url("../img/icon-burger.svg") center top no-repeat;
   background-size: contain;
   top: 26px;
+
+  @media ($tablet-width) {
+    top: 65px;
+  }
 }
 
 .reason--food .reason__text {
   padding-bottom: 35px;
+  @media ($tablet-width) {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
 }
 
 .reason__description--grey {
@@ -117,4 +175,29 @@
 
 .reason__picture img {
   display: block;
+}
+
+.reason__description {
+  @media ($tablet-width) {
+    width: 256px;
+  }
+}
+
+.reason__picture {
+  @media ($tablet-width) {
+    width: 512px;
+    background: red;
+  }
+}
+
+.reason--inverted {
+  @media ($tablet-width) {
+    flex-direction: row-reverse;
+  }
+}
+
+.reason--gift {
+  @media ($tablet-width) {
+    order: 3;
+  }
 }

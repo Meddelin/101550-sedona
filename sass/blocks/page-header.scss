@@ -1,7 +1,19 @@
+.page-header {
+  display: flex;
+  flex-direction: column;
+}
 .page-header__logo {
   position: relative;
   min-height: 55px;
   background: #ffffff;
+    @media ($tablet-width) {
+      width: 20%;
+      position: absolute;
+      left: 50%;
+      margin-left: -52.5;
+      background: none;
+      z-index: 1;
+    }
 }
 
 .page-header__logo-link {
@@ -11,4 +23,13 @@
   width: 105px;
   margin-left: -52.5px;
   z-index: 1;
+    @media ($tablet-width) {
+      position: static;
+    }
+}
+
+.menu__toggle {
+  @media ($tablet-width) {
+    display: none;
+  }
 }
