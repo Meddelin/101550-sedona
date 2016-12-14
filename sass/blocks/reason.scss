@@ -71,6 +71,7 @@
 
 .reason__description--icon .reason__text {
   padding: 0;
+
   @media ($tablet-width) {
     padding-left: 45px;
     padding-right: 45px;
@@ -151,15 +152,28 @@
  text-align: center;
  padding-left: 20px;
  padding-right: 20px;
+
+ @media ($tablet-width) {
+   padding: 0;
+ }
 }
 
 .reason__description--grey .reason__title {
   padding-top: 30px;
+
+  @media ($tablet-width) {
+    font-size: 21px;
+    padding-top: 47px;
+  }
 }
 
 .reason__description--grey .reason__number {
   padding-top: 15px;
   padding-bottom: 15px;
+
+  @media ($tablet-width) {
+    padding-bottom: 24px;
+  }
 }
 
 .reason__description--grey .reason__text {
@@ -167,6 +181,11 @@
   padding-left: 15px;
   padding-right: 15px;
   border-bottom: 1px solid rgb(214,214,214);
+
+  @media ($tablet-width) {
+    padding-bottom: 47px;
+    border: none;
+  }
 }
 
 .reason__description--grey .reason__text--no-border {

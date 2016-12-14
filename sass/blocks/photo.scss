@@ -4,6 +4,15 @@
   margin: 0;
   border-bottom: 1px solid rgb(229,229,229);
   border-top: 1px solid rgb(229,229,229);
+
+  @media ($tablet-width) {
+    border: none;
+    width: 324px;
+  }
+}
+
+img  {
+  display: block;
 }
 
 .photo__info {
@@ -12,6 +21,14 @@
 
 .photo__content {
   padding-top: 25px;
+  width: 280px;
+  height: 280px;
+
+  @media ($tablet-width) {
+    width: 324px;
+    height: 264px;
+    padding-top: 0;
+  }
 }
 
 .photo__name {
@@ -43,6 +60,7 @@
   position: relative;
   cursor: pointer;
 
+
   &:before {
     content: "";
     position: absolute;
@@ -53,5 +71,24 @@
     top: 0;
     width: 22px;
     height: 21px;
+}
+}
+
+.photo:first-of-type {
+  @media ($tablet-width) {
+    width: 648px;
+  }
+}
+
+.photo:first-of-type .photo__content {
+  @media ($tablet-width) {
+  width: 100%;
+  height: 400px;
+}
+}
+
+.photo__info {
+  @media ($tablet-width) {
+    background: rgb(242, 242, 242);
   }
 }

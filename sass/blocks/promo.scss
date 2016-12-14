@@ -4,8 +4,11 @@
   position: relative;
   padding: 0;
   margin: 0;
-  }
 
+  @media ($tablet-width) {
+    height: 286px;
+  }
+  }
 .promo--big {
   height: 390px;
 }

@@ -1,3 +1,8 @@
+.review {
+  display: flex;
+  flex-direction: column;
+}
+
 
 .review__title {
   @include site__title;
@@ -6,6 +11,11 @@
   margin: 0;
   padding: 0;
   padding-top: 40px;
+
+  @media ($tablet-width) {
+    text-align: left;
+
+  }
 }
 
 .review__text {
@@ -22,6 +32,13 @@
   margin: 0;
   border-top: 1px solid rgb(229, 229, 229);
   padding: 0 20px;
+  padding-bottom: 30px;
+
+  @media ($tablet-width) {
+    padding-left: 60px;
+    padding-right: 60px;
+    border: none;
+  }
 }
 
 .review__block .review__title {
@@ -81,4 +98,23 @@
   text-transform: none;
   color: #ff5c5c;
   padding-left: 20px;
+}
+
+.review__email {
+  width: 100%;
+  margin-left: -20px;
+  margin-top: 10px;
+}
+
+.review__block:nth-child(3) {
+  padding-left: 0;
+  width: 324px;
+  order: -1;
+  height: 299px;
+}
+
+.review__block:nth-child(1) {
+  padding-right: 0;
+  width: 324px;
+  order: 2;
 }

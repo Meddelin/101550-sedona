@@ -1,9 +1,19 @@
 .video {
   text-align: center;
+  @media ($tablet-width) {
+    padding: 0 60px;
+  }
 }
 
 .video img {
+  width: 320px;
+  height: 200px;
   display: block;
+
+  @media ($tablet-width) {
+    width: 648px;
+    height: 500px;
+  }
 }
 
 .video__title {
@@ -13,6 +23,11 @@
   margin: 0;
   padding-top: 35px;
   padding-bottom: 30px;
+
+  @media ($tablet-width) {
+    font-size: 30px;
+    padding-top: 65px;
+  }
 }
 
 .video__text {
@@ -22,6 +37,11 @@
   line-height: 24px;
   padding: 0 40px;
   padding-bottom: 35px;
+
+  @media ($tablet-width) {
+    padding-left: 115px;
+    padding-right: 115px;
+  }
 }
 
 .video__lenght {
