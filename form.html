@@ -3,14 +3,15 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <div class="wrapper">
 
       <header class="page-header">
-        <button class="page-header__toggle" type="button">Гамбургер</button>
         <nav class="menu">
+          <button class=" menu__toggle" type="button">Гамбургер</button>
           <ul class="menu__list">
             <li class="menu__item"><a href="index.html" class="menu__link">Главная</a></li>
             <li class="menu__item"><a href="photo.html" class="menu__link">Фото и видео</a></li>
@@ -30,19 +31,19 @@
 
       <section class="review">
         <h1 class="review__title">Оставьте свой отзыв</h1>
-        <p class="review__description">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+        <p class="review__text">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
         <form class="review__form" action="#" method="post">
           <div class="review__block">
             <div class="review__title">Представьтесь:</div>
-            <label for="name">Имя*:<input type="text" class="review__label" id="name" name="name"></label>
-            <label for="surname">Фамилия*:<input type="text" class="review__label" id="surname" name="surname"></label>
-            <label for="patronymic">Отчество:<input type="text" class="review__label" id="patronymic" name="patronymic"></label>
+            <label for="name">Имя*:<input type="text" class="review__label review__name" id="name" name="name" value="Петр"></label>
+            <label for="surname">Фамилия*:<input type="text" class="review__label review__surname" id="surname" name="surname" value="Иванов"></label>
+            <label for="patronymic">Отчество:<input type="text" class="review__label review__patronymic" id="patronymic" name="patronymic" value="Александрович"></label>
           </div>
           <div class="review__block">
             <div class="review__title">Контактная информация:</div>
-            <label for="phone">Введите телефон*:<input type="tel" class="review__label review__phone" id="phone" name="phone"></label>
+            <label for="phone">Контактный телефон*:<input type="tel" class="review__label review__phone" id="phone" name="phone" value="Введите телефон"></label>
             <div class="review__error review__error--hidden">Ошибка, перепроверьте номер</div>
-            <label for="mail">Электронная почта*:<input type="email" class="review__label review__enail" id="mail" name="mail"></label>
+            <label for="mail">Электронная почта*:<input type="email" class="review__label review__email" id="mail" name="mail" value="Введите e-mail"></label>
           </div>
           <div class="review__block">
             <div class="review__title">Ваше общее впечатление:</div>
@@ -68,9 +69,9 @@
       <footer class="page-footer">
         <a class="page-footer__hashtag"  href="#">#visitsedona</a>
         <div class="social">
-          <a href="#" class="social__btn social__btn--twitter btn">Twitter</a>
-          <a href="#" class="social__btn social__btn--instagram btn">Instagram</a>
-          <a href="#" class="social__btn social__btn--youtube btn">Youtube</a>
+          <a href="#" class="social__btn social__btn--twitter btn"></a>
+          <a href="#" class="social__btn social__btn--facebook btn"></a>
+          <a href="#" class="social__btn social__btn--youtube btn"></a>
         </div>
         <a href="#" class="copyright">Разработано</a>
       </footer>

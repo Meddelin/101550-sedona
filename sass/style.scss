@@ -1,7 +1,17 @@
+@import "normalize.scss";
 @import "global/fonts.scss";
 @import "variables.scss";
 @import "mixins.scss";
 @import "blocks/wrapper.scss";
+@import "global/btn.scss";
 @import "blocks/page-header.scss";
 @import "blocks/menu.scss";
 @import "blocks/promo.scss";
+@import "blocks/reasons.scss";
+@import "blocks/reason.scss";
+@import "blocks/interesting.scss";
+@import "blocks/page-footer.scss";
+@import "blocks/photos.scss";
+@import "blocks/photo.scss";
+@import "blocks/video.scss";
+@import "blocks/review.scss";
