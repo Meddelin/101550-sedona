@@ -1,15 +1,31 @@
 
 .page-footer {
   text-align: center;
+  @media ($tablet-width) {
+    display: flex;
+  }
 }
+
 .page-footer__hashtag {
   @include site__title;
   display: inline-block;
+  margin: 0;
   margin-top: 40px;
   margin-bottom: 40px;
+  text-align: center;
   padding: 0;
   text-decoration: none;
   color: #000000;
+  @media ($tablet-width) {
+    margin-top: 47px;
+    width: 33.333333%;
+  }
+}
+
+.social {
+  @media ($tablet-width) {
+  width: 33.333333%;
+}
 }
 
 .social__btn {
@@ -25,6 +41,10 @@
   &:after {
     display: block;
     position: absolute;
+  }
+
+  @media ($tablet-width) {
+    margin-top: 35px;
   }
 }
 
@@ -50,20 +70,27 @@
   @include site__text;
   display: inline-block;
   text-decoration: none;
+  margin: 0;
   padding: 0;
   padding-top: 50px;
-  padding-right: 40px;
   margin-bottom: 30px;
   position: relative;
   color: #000000;
 
-  &:after {
-    content: "";
-    background: url("../img/htmlacademy.svg") no-repeat;
-    position: absolute;
-    right: 7px;
-    bottom: -9px;
-    height: 34px;
-    width: 28px;
+  @media ($tablet-width) {
+    margin-bottom: 0px;
+    padding-top: 0px;
+    margin-top: 49px;
+    width: 33.333333%;
   }
+
+}
+.copyright__text {
+  padding-right: 10px;
+}
+
+.copyright__icon,
+.copyright__text {
+  display: inline-block;
+  vertical-align: middle;
 }

@@ -15,3 +15,15 @@
 @import "blocks/photo.scss";
 @import "blocks/video.scss";
 @import "blocks/review.scss";
+
+
+
+body {
+  min-width: 320px;
+  margin: 0;
+  padding: 0;
+
+  @media ($desktop-width) {
+  background: rgb(242,242,242);
+}
+}

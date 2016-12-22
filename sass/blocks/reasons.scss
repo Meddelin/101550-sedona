@@ -15,6 +15,10 @@
     margin-top: 47px;
     padding: 0 160px;
   }
+
+  @media ($desktop-width) {
+    padding: 0 360px;
+  }
 }
 
 .reasons__text {
@@ -26,5 +30,10 @@
 
   @media ($tablet-width) {
     margin-bottom: 45px;
+  }
+
+  @media($desktop-width) {
+    margin-bottom: 55px;
+
   }
 }

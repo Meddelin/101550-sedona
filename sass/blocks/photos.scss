@@ -10,6 +10,9 @@
     flex-direction: row;
     padding: 0 59px;
   }
+  @media ($desktop-width) {
+    padding: 0;
+  }
 }
 .photos__title {
   @include site__title;
@@ -21,6 +24,10 @@
   @media ($tablet-width) {
     font-size: 30px;
     padding-top: 75px;
+  }
+
+  @media ($desktop-width) {
+    padding-top: 110px;
   }
 }
 

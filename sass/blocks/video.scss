@@ -1,18 +1,18 @@
 .video {
   text-align: center;
-  @media ($tablet-width) {
-    padding: 0 60px;
-  }
 }
 
 .video img {
-  width: 320px;
+  width: 100%;
   height: 200px;
   display: block;
 
   @media ($tablet-width) {
-    width: 648px;
     height: 500px;
+  }
+
+  @media ($desktop-width) {
+
   }
 }
 
@@ -28,6 +28,10 @@
     font-size: 30px;
     padding-top: 65px;
   }
+
+  @media ($desktop-width) {
+    padding-top: 70px;
+  }
 }
 
 .video__text {
@@ -41,6 +45,10 @@
   @media ($tablet-width) {
     padding-left: 115px;
     padding-right: 115px;
+  }
+
+  @media ($desktop-width) {
+    padding-bottom: 70px;
   }
 }
 
@@ -56,4 +64,12 @@
 
 .video__content {
   position: relative;
+  @media ($tablet-width) {
+    padding: 0 60px;
+    padding-bottom: 60px;
+  }
+  @media ($desktop-width) {
+    padding: 0;
+    padding-bottom: 100px;
+  }
 }
