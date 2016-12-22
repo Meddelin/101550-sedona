@@ -3,6 +3,7 @@
   margin: 0 auto;
   width: 320px;
   background: white;
+  overflow: hidden;
 
   @media ($tablet-width) {
     width: 766px;

@@ -7,7 +7,7 @@
 
   @media (min-resolution: 144dpi),
   (min-resolution: 1.5dppx) {
-    background: url("..img/bg-back-mobile@2x.jpg") no-repeat;
+    background: url("../img/bg-back-mobile@2x.jpg") no-repeat;
   }
 
   @media ($tablet-width) {
@@ -51,10 +51,12 @@
   position: absolute;
   content: "";
   display: block;
-  background: url("../img/bg-intro-triangle-mobile.svg") no-repeat;
-  width: 400px;
+  background: url("../img/bg-intro-triangle-mobile.svg") no-repeat center;
+  width: 320px;
+  background-size: 322px 26px;
   height: 26px;
   bottom: 0;
+  right: -1px;
 
   @media($tablet-width) {
     background: url("../img/bg-intro-triangle-tablet.svg") no-repeat;
