@@ -10,8 +10,8 @@
     <div class="wrapper">
 
       <header class="page-header">
+        <button class=" page-header__toggle" type="button"></button>
         <nav class="menu">
-          <button class=" menu__toggle" type="button">Гамбургер</button>
           <ul class="menu__list">
             <li class="menu__item"><a href="index.html" class="menu__link">Главная</a></li>
             <li class="menu__item"><a href="photo.html" class="menu__link">Фото и видео</a></li>
@@ -27,12 +27,15 @@
       </header>
 
       <div class="promo">
+        <img src="img/text-sedona.svg" alt="Добро пожаловать в Седону" class="promo__text promo__text--small">
       </div>
 
       <section class="review">
         <h1 class="review__title">Оставьте свой отзыв</h1>
-        <p class="review__text">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
-        <form class="review__form" action="#" method="post">
+        <p class="review__description">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+
+        <div class="review__container">
+          <form class="review__form" action="#" method="post">
           <div class="review__block">
             <div class="review__title">Представьтесь:</div>
             <label for="name">Имя*:<input type="text" class="review__label review__name" id="name" name="name" value="Петр"></label>
@@ -47,23 +50,41 @@
           </div>
           <div class="review__block">
             <div class="review__title">Ваше общее впечатление:</div>
-            <label for="review__radio-1"><input type="radio" class="review__radio" id="review__radio-1" name="review__radio" value="+">Скорее положительное</label>
-            <label for="review__radio-2"><input type="radio" class="review__radio" id="review__radio-2" name="review__radio" value="-">Скорее отрицательное</label>
-            <label for="review__radio-3"><input type="radio" class="review__radio" id="review__radio-3" name="review__radio" value="+/-">Затрудняюсь ответить</label>
+
+            <input type="radio" class="review__radio" id="review__radio-1" name="review__radio" value="+">
+            <label for="review__radio-1" class="review__radio-label"><span="review__icon"></span>Скорее положительное</label>
+
+            <input type="radio" class="review__radio" id="review__radio-2" name="review__radio" value="-">
+            <label for="review__radio-2" class="review__radio-label"><span="review__icon"></span>Скорее отрицательное</label>
+
+            <input type="radio" class="review__radio" id="review__radio-3" name="review__radio" value="+/-">
+            <label for="review__radio-3" class="review__radio-label"><span="review__icon"></span>Затрудняюсь ответить</label>
           </div>
           <div class="review__block">
             <div class="review__title">Посещенные достопримечательности:</div>
-            <label for="review__checkbox-1"><input type="checkbox" class="review__checkbox" id="review__checkbox-1" name="devils-bridge" value="devils-bridge">Мост Дьявола</label>
-            <label for="review__checkbox-2"><input type="checkbox" class="review__checkbox" id="review__checkbox-2" name="slide-park" value="slide-park">Слайд-парк</label>
-            <label for="review__checkbox-3"><input type="checkbox" class="review__checkbox" id="review__checkbox-3" name="mount-bell" value="mount-bell">Гора-Колокол</label>
-            <label for="review__checkbox-4"><input type="checkbox" class="review__checkbox" id="review__checkbox-4" name="red-rocks" value="red-rocks">Красные Скалы</label>
+
+            <input type="checkbox" class="review__checkbox" id="review__checkbox-1" name="devils-bridge" value="devils-bridge">
+            <label for="review__checkbox-1" class="review__checkbox-label">Мост Дьявола</label>
+
+            <input type="checkbox" class="review__checkbox" id="review__checkbox-2" name="slide-park" value="slide-park">
+            <label for="review__checkbox-2" class="review__checkbox-label">Слайд-парк</label>
+
+            <input type="checkbox" class="review__checkbox" id="review__checkbox-3" name="mount-bell" value="mount-bell">
+            <label for="review__checkbox-3" class="review__checkbox-label">Гора-Колокол</label>
+
+            <input type="checkbox" class="review__checkbox" id="review__checkbox-4" name="red-rocks" value="red-rocks">
+            <label for="review__checkbox-4" class="review__checkbox-label">Красные Скалы</label>
           </div>
+
+
           <div class="review__block">
             <div class="review__title">Опишите свои эмоции</div>
-            <textarea name="review__text" class="review__text"  rows="8" cols="80">Опишите подробно все свои восторги</textarea>
+            <textarea name="review__text" class="review__text"  rows="5" cols="23">Опишите подробно все свои восторги</textarea>
           </div>
-          <button type="submit" name="review__submit" class="review__submit">Отправить отзыв</button>
+          <button type="submit" name="review__submit" class="review__submit btn">Отправить отзыв</button>
         </form>
+
+
       </section>
 
       <footer class="page-footer">

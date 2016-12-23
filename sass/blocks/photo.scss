@@ -4,33 +4,20 @@
   margin: 0;
   border-bottom: 1px solid rgb(229,229,229);
   border-top: 1px solid rgb(229,229,229);
+  margin-left: 20px;
+  padding-top: 25px;
   @media ($tablet-width) {
     border: none;
     width: 324px;
+    margin: 0;
+    padding: 0;
   }
   @media ($desktop-width) {
     width: 33.333333%;
   }
 }
-
-img  {
+.photo__link img  {
   display: block;
-}
-
-.photo__info {
-  padding-left: 20px;
-}
-
-.photo__content {
-  padding-top: 25px;
-  width: 280px;
-  height: 280px;
-
-  @media ($tablet-width) {
-    width: 324px;
-    height: 264px;
-    padding-top: 0;
-  }
 }
 
 .photo__name {
@@ -64,39 +51,26 @@ img  {
   font-size: 14px;
   line-height: 24px;
   text-align: left;
-  padding-left: 35px;
   margin-top: 10px;
   padding-bottom: 15px;
-  position: relative;
   @media ($tablet-width) {
+    margin-top: 30px;
     text-align: right;
     padding-right: 20px;
   }
-
   @media ($desktop-width) {
+    padding: 0;
     color: #ffffff;
+    padding-right: 30px;
   }
-
-
-  &:before {
-    content: "";
-    position: absolute;
-    background: url("../img/icon-like.svg") no-repeat;
-    background-size: 22px 21px;
-    left: 0;
-    bottom: 21px;
-    width: 22px;
-    height: 21px;
-    @media ($tablet-width) {
-      left: 230px;
-    }
-    @media ($desktop-width) {
-      left: 335px;
-    }
-}
 }
 
-
+.photo__like--icon {
+  fill: #b2b2b2;
+  @media ($desktop-width) {
+    fill: #ffffff;
+  }
+}
 
 .photo:first-of-type {
   @media ($tablet-width) {
@@ -129,14 +103,18 @@ img  {
 .photo__info {
   @media ($tablet-width) {
     background: rgb(242, 242, 242);
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-bottom: 20px;
   }
   @media ($desktop-width) {
     position: absolute;
-    display: block;
     width: 100%;
     margin: 0;
-    padding: 0;
     bottom: 0;
+    padding: 0;
+    padding-bottom: 15px;
     background: rgba(0,0,0, 0.5);
   }
 }

@@ -53,21 +53,24 @@
   display: block;
   background: url("../img/bg-intro-triangle-mobile.svg") no-repeat center;
   width: 320px;
-  background-size: 322px 26px;
-  height: 26px;
+  background-size: 322px 27px;
+  height: 27px;
   bottom: 0;
-  right: -1px;
+  left: 0px;
 
   @media($tablet-width) {
     background: url("../img/bg-intro-triangle-tablet.svg") no-repeat;
     width: 766px;
     height: 56px;
+    background-size: 768px 56px;
   }
 
   @media($desktop-width) {
     background: url("../img/bg-intro-triangle-desktop.svg") no-repeat;
-    width: 1200px;
+    width: 1201px;
     height: 56px;
+    background-size: 1206px 56px;
+    left: -1px;
   }
 }
 
