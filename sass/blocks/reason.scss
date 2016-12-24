@@ -59,10 +59,21 @@
 .reason__number {
   padding-top: 15px;
   padding-bottom: 15px;
-
+  z-index: 20;
+  position: relative;
   @media ($tablet-width) {
     padding-bottom: 25px;
   }
+}
+
+.reason--blue .reason__number span {
+  padding: 0 7px;
+  background: rgb(129, 179, 210);
+}
+
+.reason--grey .reason__number span {
+  padding: 0 7px;
+  background: rgb(238, 238, 238);
 }
 
 
@@ -262,5 +273,45 @@
   @media ($desktop-width) {
     height: 256px;
     width: 100%;
+  }
+}
+
+.reason--blue .reason__number span:after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 49px;
+  border-bottom: 2px solid rgb(193,216,232);
+  bottom: 25.5px;
+  left: 135.5px;
+  z-index: -2;
+
+  @media ($tablet-width) {
+    bottom: 35.5px;
+    left: 103px;
+  }
+
+  @media ($desktop-width) {
+    left: 175px;
+  }
+}
+
+
+.reason--grey .reason__number span:after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 49px;
+  border-bottom: 2px solid rgb(151,151,151);
+  bottom: 24.5px;
+  left: 115px;
+  z-index: -2;
+  @media ($tablet-width) {
+    bottom: 34.5px;
+    left: 103px;
+  }
+
+  @media ($desktop-width) {
+    left: 175px;
   }
 }

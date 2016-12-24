@@ -60,3 +60,10 @@
     padding-top: 75px;
   }
 }
+
+.interesting__link:hover {
+  background: rgb(84,150,189);
+}
+.interesting__link:active {
+  color: rgb(136,182,209);
+}

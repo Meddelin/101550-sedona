@@ -16,7 +16,7 @@
   text-decoration: none;
   color: #000000;
   @media ($tablet-width) {
-    margin-top: 47px;
+    margin-top: 12px;
     width: 33.333333%;
   }
 }
@@ -28,10 +28,12 @@
 }
 
 .social__btn {
-  padding: 25px 25px;
+  width: 46px;
+  height: 48px;
   display: inline-block;
   position: relative;
   margin-left: 5px;
+  background: rgb(129,179,210);
 
   &:first-child {
     margin-left: 0;
@@ -42,27 +44,30 @@
     position: absolute;
   }
 
-  @media ($tablet-width) {
-    margin-top: 35px;
-  }
 }
 
-.social__btn--twitter:after {
-  content: url("../img/icon-twitter.svg");
-  top: 20px;
-  right: 15px;
+.social__twitter {
+  position: absolute;
+  width: 18px;
+  height: 14px;
+  right: 14px;
+  top: 17px;
 }
 
-.social__btn--facebook:after {
-  content: url("../img/icon-facebook.svg");
-  top: 15px;
-  right: 20px;
+.social__facebook {
+  position: absolute;
+  width: 9px;
+  height: 18px;
+  top: 14px;
+  right: 19px;
 }
 
-.social__btn--youtube:after {
-  content: url("../img/icon-youtube.svg");
-  top: 18px;
-  right: 15px;
+.social__youtube {
+  position: absolute;
+  width: 20px;
+  height: 14px;
+  top: 17px;
+  right: 12px;
 }
 
 .copyright {
@@ -77,9 +82,9 @@
   color: #000000;
 
   @media ($tablet-width) {
+    margin-top: 12px;
     margin-bottom: 0px;
     padding-top: 0px;
-    margin-top: 49px;
     width: 33.333333%;
   }
 
@@ -100,4 +105,16 @@
 
 .copyright:active .copyright__icon {
   fill: rgb(178, 178, 178);
+}
+
+.social__btn:hover {
+  background: rgb(102,158,192);
+}
+
+.social__btn:active {
+  background: rgb(84,150,189);
+}
+
+.social__btn:active svg {
+  fill: rgb(136,182,209);
 }
