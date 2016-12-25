@@ -61,16 +61,17 @@
   @media($tablet-width) {
     background: url("../img/bg-intro-triangle-tablet.svg") no-repeat;
     width: 766px;
-    height: 56px;
-    background-size: 768px 56px;
+    height: 57px;
+    background-size: 768px 57px;
+    background-position-x: -1px;
   }
 
   @media($desktop-width) {
     background: url("../img/bg-intro-triangle-desktop.svg") no-repeat;
-    width: 1201px;
-    height: 56px;
-    background-size: 1206px 56px;
-    left: -1px;
+    width: 1200px;
+    height: 57px;
+    background-size: 1202px 57px;
+    background-position-x: -1px;
   }
 }
 
