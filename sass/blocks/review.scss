@@ -83,7 +83,7 @@
 
 .review__block input[type="text"] {
   @include site__text;
-  font-family: 'PT Sans Bold', 'Arial';
+  font-family: 'PT Sans Bold', 'Arial', sans-serif;
   font-size: 18px;
   line-height: 26px;
   margin: 0;
@@ -146,7 +146,7 @@
 
 .review__block input[type="tel"],
 .review__block input[type="email"] {
-  font-family: 'PT Sans Bold', 'Arial';
+  font-family: 'PT Sans Bold', 'Arial', sans-serif;
   font-size: 18px;
   line-height: 26px;
   margin: 0;
@@ -391,7 +391,7 @@
 .review__block:nth-child(3) label,
 .review__block:nth-child(4) label {
   @include site__text;
-  font-family: 'PT Sans Bold', 'Arial';
+  font-family: 'PT Sans Bold', 'Arial', sans-serif;
   font-size: 18px;
   line-height: 25px;
   text-transform: none;
@@ -470,7 +470,7 @@
   border: none;
   background: rgb(242,242,242);
   @include site__text;
-  font-family: 'PT Sans Bold', 'Arial';
+  font-family: 'PT Sans Bold', 'Arial', sans-serif;
   font-size: 18px;
   line-height: 26px;
   text-align: left;
@@ -502,7 +502,7 @@
 .review__submit {
   border: none;
   @include site__text;
-  font-family: 'PT Sans Bold', 'Arial';
+  font-family: 'PT Sans Bold', 'Arial', sans-serif;
   font-size: 21px;
   line-height: 26px;
   text-transform: uppercase;
