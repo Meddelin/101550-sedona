@@ -46,7 +46,7 @@
             <label for="patronymic">Отчество:<input type="text" class="review__label review__patronymic" id="patronymic" name="patronymic" value="Александрович"></label>
           </div>
           <div class="review__block">
-            <div class="review__title">Контактная информация:</div>
+            <div class="review__title review__title--borderline"><span>Контактная информация:</span></div>
             <div class="review__element">
               <label for="phone"><span>Контактный</span> телефон*:</label>
               <input type="tel" class="review__label review__phone" id="phone" name="phone" value="Введите телефон"><div class="review__icon review__icon--phone"></div>
@@ -72,7 +72,7 @@
             <label for="review__radio-3" class="review__radio-label review__radio-label--last">Затрудняюсь ответить</label>
           </div>
           <div class="review__block">
-            <div class="review__title">Посещенные<br> достопримечательности:</div>
+            <div class="review__title review__title--borderline"><span>Посещенные<br> достопримечательности:</span></div>
 
             <div class="review__element-checkbox review__element-checkbox--change-1">
               <input type="checkbox" class="review__checkbox" id="review__checkbox-1" name="devils-bridge" value="devils-bridge" checked>
@@ -96,10 +96,11 @@
         </div>
 
           <div class="review__block">
-            <div class="review__title">Опишите свои эмоции</div>
+            <div class="review__title review__title--borderline"><span>Опишите свои эмоции</span></div>
             <textarea name="review__text" class="review__text">Опишите подробно все свои восторги</textarea>
           </div>
           <button type="submit" name="review__submit" class="review__submit btn">Отправить отзыв</button>
+          <span class="review__required"> * - Обязательные поля </span>
         </form>
 
 
@@ -145,8 +146,10 @@
 
       <div class="popup popup--success">
         <div class="popup__title">Ваш отзыв отправлен!</div>
-        <p class="popup__description">Спасибо за ваше участие, ваш отзыв уже поступил к нам. в ближайшее время мы опубликуем его на сайте.</p>
+        <p class="popup__description">Спасибо за ваше участие, ваш отзыв уже поступил к нам.<br> в ближайшее время мы опубликуем его на сайте.</p>
+        <div class="popup__background">
         <button class="btn popup__button" type ="button">Закрыть окно</button>
+        <div>
       </div>
   </body>
 </html>

@@ -1,3 +1,6 @@
 .btn {
+  @include site__title;
   background: rgb(129, 179, 210);
+  border: none;
+  outline: none;
 }
