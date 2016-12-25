@@ -1,6 +1,7 @@
 .page-header {
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 
 .page-header__logo {
@@ -8,13 +9,16 @@
   min-height: 55px;
   background: #ffffff;
   @media ($tablet-width) {
-     position: absolute;
-     left: 50%;
-     margin-left: -52.5;
-     background: none;
-     z-index: 1;
-     top: 0;
+    position: absolute;
+    left: 50%;
+    background: none;
+    z-index: 1;
+    top:0;
     }
+  @media($desktop-width) {
+    margin-left: -90px;
+
+  }
 }
 
 .page-header__logo-link {
@@ -27,10 +31,26 @@
   @media ($tablet-width) {
     position: static;
   }
+  @media ($desktop-width) {
+    margin-left: 0;
+  }
 }
 
-.menu__toggle {
+.page-header__toggle {
+  position: absolute;
+  display: block;
+  width: 25px;
+  height: 25px;
+  margin: 0;
+  padding: 0;
+  top: 18px;
+  background: url("../img/icon-cross.svg") no-repeat;
+  border: none;
+  z-index: 9;
+  right: 20px;
+  cursor: pointer;
+
   @media ($tablet-width) {
-    display: none;
+    visibility: hidden;
   }
 }
