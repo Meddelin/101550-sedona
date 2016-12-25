@@ -116,14 +116,12 @@ module.exports = function(grunt) {
         }]
       },
       html: {
-        files: {
           files: [{
             expand: true,
             src: ["*.html"],
             dest: "build"
           }]
         }
-      }
     },
 
     clean: {

@@ -4,6 +4,7 @@
   width: 320px;
   background: white;
   overflow: hidden;
+  box-shadow: 0 -5px 9px 2px #dbdbdb;
 
   @media ($tablet-width) {
     width: 766px;

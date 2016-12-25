@@ -9,12 +9,13 @@
   @include site__title;
   margin: 0;
   padding-top: 30px;
-  padding-bottom: 25px;
+  padding-bottom: 29px;
 
   @media ($tablet-width) {
     font-size: 30px;
-    padding-top: 60px;
+    padding-top: 55px;
   }
+
 }
 
 .interesting__text br {
@@ -36,6 +37,10 @@
   @media ($tablet-width) {
     padding-bottom: 45px;
   }
+
+  @media ($desktop-width) {
+    padding-bottom: 65px;
+  }
 }
 
 .interesting__link {
@@ -43,7 +48,6 @@
   padding: 15px 45px;
   text-decoration: none;
   color: #ffffff;
-
   @media ($tablet-width) {
     padding: 15px 135px;
   }
@@ -55,9 +59,9 @@
   height: 350px;
   border: none;
   margin-top: 65px;
-  margin-bottom: 70px;
+  margin-bottom: 40px;
   @media ($tablet-width) {
-    margin-top: 75px;
+    margin-top: 80px;
   }
 }
 

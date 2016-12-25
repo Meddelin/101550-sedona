@@ -1,6 +1,6 @@
 .promo {
   background: rgb(140,117,109) url("../img/bg-back-mobile@1x.jpg") no-repeat;
-  height: 180px;
+  height: 160px;
   position: relative;
   padding: 0;
   margin: 0;
@@ -43,7 +43,7 @@
 
   @media($tablet-width) {
     width: 460px;
-    padding-top: 80px;
+    padding-top: 75px;
   }
 }
 
