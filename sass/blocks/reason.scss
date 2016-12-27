@@ -1,21 +1,21 @@
-
 .reason--blue {
- background: rgb(129, 179, 210);
- color: #ffffff;
- text-align: center;
- @media ($tablet-width) {
-   width: 33.3333333%;
- }
+  background: rgb(129, 179, 210);
+  color: #ffffff;
+  text-align: center;
+
+  @media ($tablet-width) {
+    width: 33.3333333%;
+  }
 }
 
 .reason-row {
+
   @media ($tablet-width) {
     display: flex;
     flex-direction: row;
     min-height: 256px;
   }
 }
-
 
  .reason__title {
   @include site__title;
@@ -55,7 +55,6 @@
   }
 }
 
-
 .reason__number {
   padding-top: 15px;
   padding-bottom: 15px;
@@ -77,9 +76,8 @@
   background: rgb(238, 238, 238);
 }
 
-
-
 .reason--icon {
+
   @media($tablet-width) {
   width: 33.333333%;
   }
@@ -87,6 +85,7 @@
 
 .reason--icon-gift .reason__text br {
   display: none;
+
   @media ($tablet-width) {
     display: block;
   }
@@ -94,18 +93,19 @@
 
 .reason--icon .reason__text {
   padding: 0;
+
   @media ($tablet-width) {
     padding-left: 40px;
     padding-right: 40px;
     padding-bottom: 60px;
   }
+
   @media ($desktop-width) {
     padding-left: 65px;
     padding-right: 65px;
     padding-bottom: 80px;
   }
 }
-
 
 .reason--icon .reason__title {
   padding: 0;
@@ -125,7 +125,6 @@
 .reason {
   position: relative;
 }
-
 
 .reason--icon:before {
   content:"";
@@ -245,6 +244,7 @@
   }
 }
 .reason--grey:first-child .reason__text {
+
   @media ($tablet-width) {
     padding-left: 50px;
     padding-right: 50px;
@@ -253,12 +253,14 @@
 
 .reason--grey br {
   display: none;
-@media ($desktop-width) {
+
+  @media ($desktop-width) {
   display: block;
-}
+  }
 }
 
 .reason--grey:last-child .reason__text {
+
   @media ($tablet-width) {
     padding-left: 50px;
     padding-right: 50px;
@@ -271,12 +273,14 @@
 
 
 .reason-row--inverted {
+
   @media ($tablet-width) {
     flex-direction: row-reverse;
   }
 }
 
 .reason--icon-gift {
+
   @media ($tablet-width) {
     order: 3;
   }
@@ -284,6 +288,7 @@
 
 .reason--blue .reason__title {
   padding-top: 51.5px;
+
   @media ($tablet-width) {
     padding-top: 47px;
   }
@@ -293,11 +298,13 @@
   padding-left: 20px;
   padding-right: 20px;
   padding-bottom: 34px;
+
   @media ($tablet-width) {
     padding-left: 45px;
     padding-right: 45px;
     padding-bottom: 0;
   }
+
   @media ($desktop-width) {
     padding-left: 60px;
     padding-right: 60px;
@@ -308,12 +315,14 @@
 .reason--image {
   width: 320px;
   height: 256px;
+
   @media ($tablet-width) {
     width: 66.66666%;
   }
 }
 
 .reason--image img {
+
   @media ($desktop-width) {
     height: 256px;
     width: 100%;
@@ -350,6 +359,7 @@
   bottom: 24.5px;
   left: 115px;
   z-index: -2;
+
   @media ($tablet-width) {
     bottom: 32.5px;
     left: 103px;

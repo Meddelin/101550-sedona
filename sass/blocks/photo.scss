@@ -4,18 +4,20 @@
   margin: 0;
   border-bottom: 1px solid rgb(229,229,229);
   padding-left: 20px;
-  padding-top: 25px;
+  padding-top: 20px;
+
   @media ($tablet-width) {
     border: none;
     width: 324px;
     margin: 0;
     padding: 0;
   }
+
   @media ($desktop-width) {
     width: 33.333333%;
   }
 }
-.photo__link img  {
+ img  {
   display: block;
 }
 
@@ -25,9 +27,15 @@
   line-height: 24px;
   text-align: left;
   padding-top: 15px;
+
+  @media ($tablet-width) {
+    padding-top: 13px;
+  }
+
   @media ($desktop-width) {
     color: #ffffff;
     padding-left: 20px;
+    padding-top: 17px;
   }
 }
 
@@ -38,6 +46,11 @@
   font-size: 14px;
   line-height: 24px;
   text-align: left;
+
+  @media ($tablet-width) {
+    padding-bottom:0;
+  }
+
   @media ($desktop-width) {
     color: #ffffff;
     padding-left: 20px;
@@ -50,49 +63,68 @@
   line-height: 24px;
   text-align: left;
   margin-top: 5px;
-  padding-bottom: 15px;
+  margin-bottom: 18px;
   cursor: pointer;
+
   @media ($tablet-width) {
-    margin-top: 30px;
+    margin-top: 24px;
     text-align: right;
-    padding-right: 20px;
+    padding-right: 30px;
+    margin-bottom: 0;
+    margin-right:0;
   }
+
   @media ($desktop-width) {
     padding: 0;
     color: #ffffff;
     padding-right: 30px;
+    margin-top: 25px;
   }
 }
 
 .photo__like svg {
+  position: relative;
+  top: 3px;
+  left: 3px;
   fill: #b2b2b2;
+
   @media ($desktop-width) {
     fill: #ffffff;
   }
 }
-
 .photo:first-of-type {
+
   @media ($tablet-width) {
     width: 648px;
   }
+
   @media ($desktop-width) {
     width: 100%;
   }
 }
 .photo:first-of-type .photo__like:before {
+
   @media ($tablet-width) {
     left: 550px;
   }
+
   @media ($desktop-width) {
     left: 1120px;
   }
 }
 
-.photo:first-of-type .photo__content {
+.photo:first-of-type .photo__like {
+
   @media ($tablet-width) {
-  width: 100%;
-  height: 400px;
+    padding-right: 20px;
+  }
 }
+
+.photo:nth-of-type(3) .photo__like {
+
+  @media ($desktop-width) {
+    padding-right: 36px;
+  }
 }
 
 .photo {
@@ -100,6 +132,7 @@
 }
 
 .photo__info {
+
   @media ($tablet-width) {
     background: rgb(242, 242, 242);
     display: flex;
@@ -107,6 +140,7 @@
     padding-left: 20px;
     padding-bottom: 20px;
   }
+
   @media ($desktop-width) {
     position: absolute;
     width: 100%;
@@ -116,4 +150,34 @@
     padding-bottom: 15px;
     background: rgba(0,0,0, 0.5);
   }
+}
+
+.photo .photo__link img {
+  width: 280px;
+  height: 281px;
+
+  @media ($tablet-width) {
+  height: 267px;
+  width: 324px;
+  }
+
+  @media ($desktop-width) {
+    width: 400px;
+  }
+}
+
+.photo:first-of-type .photo__link img {
+
+  @media ($tablet-width) {
+    height: 398px;
+    width: 648px;
+  }
+
+  @media ($desktop-width) {
+    width: 1200px;
+  }
+}
+
+.photo__like  svg {
+  margin-right: 10px;
 }

@@ -1,9 +1,6 @@
-
-
 .interesting {
   text-align: center;
 }
-
 
 .interesting__title {
   @include site__title;
@@ -15,12 +12,10 @@
     font-size: 30px;
     padding-top: 55px;
   }
-
 }
 
 .interesting__text br {
   display: none;
-
   @media ($tablet-width) {
     display: block;
   }
@@ -33,11 +28,9 @@
   padding-left: 20px;
   padding-right: 20px;
   padding-bottom: 38px;
-
   @media ($tablet-width) {
     padding-bottom: 45px;
   }
-
   @media ($desktop-width) {
     padding-bottom: 65px;
   }
@@ -68,6 +61,7 @@
 .interesting__link:hover {
   background: rgb(84,150,189);
 }
+
 .interesting__link:active {
   color: rgb(136,182,209);
 }

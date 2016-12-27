@@ -17,10 +17,12 @@
   background: #ffffff;
   z-index: 10000;
   width: 320px;
+
   @media ($tablet-width) {
     width: 400px;
     left: 230px;
   }
+
   @media ($desktop-width) {
     left: 420px;
   }
@@ -60,7 +62,7 @@
     padding: 18px 120px;
     margin-bottom: 50px;
     margin-top: 35px;
-   }
+  }
 }
 
 .popup--failed .popup__title {
@@ -91,6 +93,7 @@
   bottom: 100px;
   z-index: 10000;
   background: #ffffff;
+
   @media ($tablet-width) {
     left: 60px;
     width: 648px;
