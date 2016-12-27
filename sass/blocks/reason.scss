@@ -17,7 +17,7 @@
   }
 }
 
- .reason__title {
+.reason__title {
   @include site__title;
   font-size: 18px;
   margin: 0;
@@ -183,15 +183,15 @@
 }
 
 .reason--grey {
- background: rgb(238, 238, 238);
- text-align: center;
- padding-left: 20px;
- padding-right: 20px;
+  background: rgb(238, 238, 238);
+  text-align: center;
+  padding-left: 20px;
+  padding-right: 20px;
 
- @media ($tablet-width) {
+  @media ($tablet-width) {
    padding: 0;
    width: 33.333333%;
- }
+  }
 }
 
 .reason--grey .reason__title {
