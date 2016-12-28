@@ -324,7 +324,10 @@
 }
 
 .review__radio-label--last {
-  margin-bottom: 0;
+  margin-bottom: 25px;
+  @media($tablet-width) {
+    margin-bottom: 0;
+  }
 }
 
 [type="radio"]:not(:checked) + label,
