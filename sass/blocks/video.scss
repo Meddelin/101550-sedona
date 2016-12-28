@@ -97,6 +97,8 @@
   padding-bottom: 20px;
   padding-left: 25px;
   padding-right: 25px;
+  width: 280px;
+  box-sizing: border-box;
   background: rgb(242, 242, 242);
 
   @media ($tablet-width) {
@@ -105,8 +107,13 @@
     padding-left: 35px;
     padding-right: 40px;
     padding-top: 36px;
+    width: 648px;
     padding-bottom: 36px;
     background: rgba(0,0,0,0.5);
+  }
+
+  @media ($desktop-width) {
+    width: 800px;
   }
 }
 
@@ -124,10 +131,9 @@
   }
 }
 
-
 .video__control {
   position: absolute;
-  bottom: -66px;
+  bottom: -65px;
 
   @media ($tablet-width) {
     bottom: 60px;
@@ -142,10 +148,9 @@
   margin-left: 20px;
   margin-right: 20px;
   height: 45px;
-  width: 289px;
+  width: 280px;
   background: rgba(0,0,0,0.5);
   position: relative;
-
   @media ($tablet-width) {
     margin: 0;
     padding: 0;
